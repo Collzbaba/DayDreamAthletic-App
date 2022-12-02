@@ -11,7 +11,7 @@ import { setContext } from '@apollo/client/link/context';
 import { NavBar } from "./components/navBar";
 import { MainPage } from "./components/MainPage";
 import { ProductCard } from "./components/Cards";
-import SideBar from "./components/SideBar";
+// import SideBar from "./components/SideBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/App.css";
 
