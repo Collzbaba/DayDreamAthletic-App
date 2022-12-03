@@ -6,7 +6,13 @@ import {
   ADD_TO_BAG
 } from "./actions";
 
-export const reducer = (state, action) => {
+const initState = {
+  products: [],
+  categories: [],
+  currentCategory: null,
+}
+
+export const reducer = (state = initState, action) => {
   switch (action.type) {
     case UPDATE_PRODUCTS:
       return {
@@ -29,7 +35,12 @@ export const reducer = (state, action) => {
     case ADD_TO_BAG:
       return {
         ...state,
-        products: [...action.product],
+        products: [
+          ...state.products,
+          {
+            name: action.payload
+          }
+        ]
       };
 
     default:

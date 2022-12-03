@@ -8,21 +8,25 @@ import { QUERY_ALL_PRODUCTS } from '../../utils/queries';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 //import { SideBar } from "./SideBar.js";
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 export const ProductCard = ({image, name}) => {
   const dispatch = useDispatch();
   const [activeLink, setActiveLink] = useState("all");
   const [scrolled, setScrolled] = useState(false);
   const {loading, data} = useQuery(QUERY_ALL_PRODUCTS);
-  const addToCart = () => {
-    dispatchEvent({
+  const addToBag = (e) => {
+    e.preventDefault();
+    console.log(e);
+    console.log(e.target);
+    const product = e.target.getAttribute("data-object");
+    dispatch({
       type: "ADD_TO_BAG",
-      payload: {
-        
-      }
+      payload: { product }
     })
   }
+  // const stateProduct = useSelector((state) => state.products)
+  // console.log(stateProduct);
 
   return (
     <Container fluid>
@@ -35,7 +39,7 @@ export const ProductCard = ({image, name}) => {
                         <Card.Title>{products.name}</Card.Title>
                     </Card.Body>
                     <br></br>
-                    <Button onClick={addToCart} variant="primary">Check me out 👀</Button>
+                    <Button onClick={addToBag} data-object={products.name} variant="primary">Check me out 👀</Button>
                         </Card>
                         <br></br>
                         </Col>})}
