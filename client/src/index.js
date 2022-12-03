@@ -9,6 +9,8 @@ import { reducer } from './utils/reducers';
 
 const store = createStore(reducer);
 
+// random text
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
