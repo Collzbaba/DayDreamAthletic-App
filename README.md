@@ -1,14 +1,53 @@
 # Group-6-Final-Project
 
-## Dreamwear Athletic
+## DayDreamAthletic-App
 
-We have created an e-commerce site that specializes in athletic wear for men, women, and children.
+### License
+  ![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)
+***
+
+### Description
+We have created an e-commerce site that specializes in athletic wear for men, women, and children..
+***
+
+### User Story
 Users are able to browse the different categories, as well as a special World Cup section as the tournament is currently on-going. Users can look at product descriptions, and they can add their products to a cart for purchase. In order to complete their purchase, users will need to have an account, which will also automatically apply members' discounts.
+***
 
-Our site includes a navigation bar, a search function, a carousel, product cards, and a side bar to filter products.
+## Table of Contents
+1. [Technologies Used](#technologies)
+2. [Screenshots](#screenshots)
+3. [Links/sources](#links/sources)
+***
 
+<a name="technologies"></a>
+## Technologies Used
+  
+* React
+* MongoDB
+* GraphQL
+* Bootstrap
+* Apollo
+* Heroku for deployment
 
+***
 
+<a name="screenshots"></a>
+## Screenshots
+
+![Signup Page](./client/src/assets/img/Signup-Page.png)
+![Login Page](./client/src/assets/img/Login-Page.png)
+![Product Page](./client/src/assets/img/Product-Page.png)
+![Logout Page](./client/src/assets/img/Logout-page.png)
+***
+
+<a name="links/source"></a>
+## Links/sources
+
+[Deployed-Application](https://daydreamathletic-app.herokuapp.com/)
+
+[Repo-Link](https://github.com/Collzbaba/DayDreamAthletic-App)
+***
 
 
 ###### Sources for the images used:
