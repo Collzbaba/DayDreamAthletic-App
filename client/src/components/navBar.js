@@ -32,13 +32,14 @@ export const NavBar = () => {
 
   //   lastScrollY = window.scrollY;
   // });
+  console.log(auth.loggedIn());
 
 
 
   return (
     <header>
       <div className="top-banner">
-        {auth.loggedIn 
+        {auth.loggedIn() 
         ? <h4>Hello, start shopping!</h4>
         : <h4>Please log in!</h4>
         }

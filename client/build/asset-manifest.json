@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ab88ce5.css",
-    "main.js": "/static/js/main.6c1b2985.js",
+    "main.js": "/static/js/main.798f3b6d.js",
     "static/js/787.3c78bae6.chunk.js": "/static/js/787.3c78bae6.chunk.js",
     "static/media/qatarbanner.webp": "/static/media/qatarbanner.c2995b03453c2bb9d9b7.webp",
     "static/media/fifabanner2.jpg": "/static/media/fifabanner2.f02e422e0e058ab633b2.jpg",
@@ -29,11 +29,11 @@
     "static/media/iconmonstr-shopping-bag-4.svg": "/static/media/iconmonstr-shopping-bag-4.39427969dc691bd73248eaf0be1fbd3d.svg",
     "static/media/arrow.svg": "/static/media/arrow.c2c8134e6fd94f697299c163562ce908.svg",
     "main.8ab88ce5.css.map": "/static/css/main.8ab88ce5.css.map",
-    "main.6c1b2985.js.map": "/static/js/main.6c1b2985.js.map",
+    "main.798f3b6d.js.map": "/static/js/main.798f3b6d.js.map",
     "787.3c78bae6.chunk.js.map": "/static/js/787.3c78bae6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ab88ce5.css",
-    "static/js/main.6c1b2985.js"
+    "static/js/main.798f3b6d.js"
   ]
 }

@@ -67,7 +67,7 @@ const Signup = () => {
           keyboard={false}
           centered
         >
-          {Auth.loggedIn
+          {Auth.loggedIn()
           ? <button onClick={Auth.logout}>logout</button>
           : <div>
           
