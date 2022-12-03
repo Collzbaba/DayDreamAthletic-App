@@ -7,6 +7,7 @@ const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3005;
+const uri = process.env.MONGODB_URI;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
@@ -41,3 +42,5 @@ const startApolloServer = async (typeDefs, resolvers) => {
   
 // Call the async function to start the server
   startApolloServer(typeDefs, resolvers);
+
+  
