@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5cf818b2.css",
-    "main.js": "/static/js/main.96227fe4.js",
+    "main.css": "/static/css/main.8ab88ce5.css",
+    "main.js": "/static/js/main.6c1b2985.js",
     "static/js/787.3c78bae6.chunk.js": "/static/js/787.3c78bae6.chunk.js",
-    "static/media/ball.png": "/static/media/ball.746d4bd0d610e196695f.png",
+    "static/media/qatarbanner.webp": "/static/media/qatarbanner.c2995b03453c2bb9d9b7.webp",
     "static/media/fifabanner2.jpg": "/static/media/fifabanner2.f02e422e0e058ab633b2.jpg",
+    "static/media/banner3.png": "/static/media/banner3.e6203eccd614c97f8b30.png",
     "static/media/bannerimg.webp": "/static/media/bannerimg.88f28e0df29221166954.webp",
     "static/media/fifabanner.webp": "/static/media/fifabanner.e1ca53c98ab3a1c48651.webp",
     "static/media/adidas-beanie-green.jpg": "/static/media/adidas-beanie-green.829ebf96372dba3b497d.jpg",
+    "static/media/ballbanner2.jpg": "/static/media/ballbanner2.8b65c86df771fa4f624e.jpg",
     "static/media/adidas-bucket-hat.webp": "/static/media/adidas-bucket-hat.0e22661a2aef70718447.webp",
     "static/media/adidas-jacket-gray.jpg": "/static/media/adidas-jacket-gray.501262b9bb437ccb9be2.jpg",
     "static/media/adidas-hat-black.jpg": "/static/media/adidas-hat-black.196315f948f35d498f08.jpg",
@@ -23,14 +25,15 @@
     "index.html": "/index.html",
     "static/media/searchicon.svg": "/static/media/searchicon.69dfca784d095a106c037dafc31500fe.svg",
     "static/media/loginicon.svg": "/static/media/loginicon.30825c8716a39d610cbde039795fefcc.svg",
+    "static/media/checkmark.svg": "/static/media/checkmark.674ca431bf7f9f519654ad2c46774070.svg",
     "static/media/iconmonstr-shopping-bag-4.svg": "/static/media/iconmonstr-shopping-bag-4.39427969dc691bd73248eaf0be1fbd3d.svg",
     "static/media/arrow.svg": "/static/media/arrow.c2c8134e6fd94f697299c163562ce908.svg",
-    "main.5cf818b2.css.map": "/static/css/main.5cf818b2.css.map",
-    "main.96227fe4.js.map": "/static/js/main.96227fe4.js.map",
+    "main.8ab88ce5.css.map": "/static/css/main.8ab88ce5.css.map",
+    "main.6c1b2985.js.map": "/static/js/main.6c1b2985.js.map",
     "787.3c78bae6.chunk.js.map": "/static/js/787.3c78bae6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cf818b2.css",
-    "static/js/main.96227fe4.js"
+    "static/css/main.8ab88ce5.css",
+    "static/js/main.6c1b2985.js"
   ]
 }

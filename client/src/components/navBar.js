@@ -12,12 +12,14 @@ import Logoimg from '../assets/img/daydreamlogo.png'
 import Signup from './signup'
 import Bag from '../components/Bag'
 import "aos/dist/aos.css";
+import auth from '../utils/auth'
 
 AOS.init();
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("all");
   const [scrolled, setScrolled] = useState(false);
+  // console.log(auth.loggedIn());
   // const Header = document.querySelector("header")
   // let lastScrollY = window.scrollY;
 
@@ -36,6 +38,10 @@ export const NavBar = () => {
   return (
     <header>
       <div className="top-banner">
+        {auth.loggedIn 
+        ? <h4>Hello, start shopping!</h4>
+        : <h4>Please log in!</h4>
+        }
         <h1 className="discount-title">FREE SHIPPING</h1>
         <a href="#" className="discount-top-banner">ON ORDERS $19+</a>
       </div>
@@ -81,7 +87,7 @@ export const NavBar = () => {
           </Navbar.Collapse>
           <div className="nav-login-out">
             <Bag />
-
+            
             <Signup />
 
           </div>

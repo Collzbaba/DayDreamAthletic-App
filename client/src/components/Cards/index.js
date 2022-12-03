@@ -18,11 +18,11 @@ export const ProductCard = ({image, name}) => {
     <Container fluid>
         <Row>    
             {data?.products.map((products, i) => {
-                return <Col>
+                return <Col key={i}>
                     <Card style={{ width: '18rem', height: '28rem'}}>
                     <Card.Img src={products.image}/>
                     <Card.Body>
-                        <Card.Title key={i}>{products.name}</Card.Title>
+                        <Card.Title>{products.name}</Card.Title>
                     </Card.Body>
                     <br></br>
                     <Button variant="primary">Check me out 👀</Button>

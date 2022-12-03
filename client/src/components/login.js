@@ -82,13 +82,12 @@ const Login = (props) => {
           </div>
 
           <div className='modal-login-signup-form-container'>
-            <div onSubmit={handleSubmit}>
               <Modal.Header closeButton>
                 <Modal.Title>LOGIN</Modal.Title>
 
               </Modal.Header>
+          <Form onSubmit={handleSubmit} className="d-flex">
               <Modal.Body>
-                <Form className="d-flex">
                   <Form.Control
                     type="text"
                     id="username"
@@ -115,12 +114,11 @@ const Login = (props) => {
                     className="m-2 modal-login-signup-form "
                     aria-label="Search"
                   />
-                </Form>
               </Modal.Body>
               <Modal.Footer>
-                <Button onClick={handleSubmit} variant="primary modal-bottom-btn" type="submit">SUBMIT</Button>
+                <Button variant="primary modal-bottom-btn" type="submit">SUBMIT</Button>
               </Modal.Footer>
-            </div>
+            </Form>
           </div>
           <div className='forgot-password'>
             <p style={{color: '#ff2d2d'}} ref={errRef} aria-live="assertive">{errMsg}</p>

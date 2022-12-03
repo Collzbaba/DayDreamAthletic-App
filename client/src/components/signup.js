@@ -35,7 +35,8 @@ const Signup = () => {
       const { data } = await addUser({
         variables: { ...formState },
       });
-      Auth.login(data.addProfile.token);
+      console.log(data.addUser.token);
+      Auth.login(data.addUser.token);
       window.location.reload(false);
     } catch (err) {
       console.error(err);
@@ -66,6 +67,9 @@ const Signup = () => {
           keyboard={false}
           centered
         >
+          {Auth.loggedIn
+          ? <button onClick={Auth.logout}>logout</button>
+          : <div>
           
           <div className='signup-info'>
             <h2>YOUR DAY DREAM CLUB BENEFITS AWAIT!</h2>
@@ -75,13 +79,13 @@ const Signup = () => {
           </div>
 
           <div className='modal-login-signup-form-container'>
-            <div onSubmit={handleSubmit}>
+            <div>
               <Modal.Header closeButton>
                 <Modal.Title className='signup-title-modal'>SIGN UP</Modal.Title>
 
               </Modal.Header>
+              <Form  onSubmit={handleSubmit} className="d-flex">
               <Modal.Body>
-                <Form className="d-flex">
                   <Form.Control
                     type="email"
                     placeholder="Email"
@@ -100,11 +104,11 @@ const Signup = () => {
                     value={formState.password}
                     onChange={handleChange}
                   />
-                </Form>
               </Modal.Body>
               <Modal.Footer>
-                <Button onClick={handleSubmit} variant="primary modal-bottom-btn" type="submit">SUBMIT</Button>
+                <Button variant="primary modal-bottom-btn" type="submit">SUBMIT</Button>
               </Modal.Footer>
+              </Form>
             </div>
             
           </div>
@@ -112,6 +116,8 @@ const Signup = () => {
           <p style={{color: '#ff2d2d'}} ref={errRef} aria-live="assertive">{errMsg}</p>
             <Login/>
           </div>
+          </div>
+          }
         </Modal>
       </section>
     </>
