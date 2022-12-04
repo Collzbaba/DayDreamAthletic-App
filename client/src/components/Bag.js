@@ -21,6 +21,10 @@ function OffCanvasExample({ name, ...props }) {
 
   })
 
+  const handleCheckout = () => {
+    window.location.reload();
+  }
+
 
   return (
     <>
@@ -42,7 +46,7 @@ function OffCanvasExample({ name, ...props }) {
             Don't Forget To Use Code "DREAM" On Checkout To Recieve $10 Off!
           </div>
           <div>
-            <button href="{CheckoutPage}" className='modal-bottom-btn checkout-btn'>CHECKOUT <img src={Checkmark} className="checkmark-icon"></img></button>
+            <button onClick={handleCheckout} className='modal-bottom-btn checkout-btn'>CHECKOUT <img src={Checkmark} className="checkmark-icon"></img></button>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
