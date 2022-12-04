@@ -39,6 +39,7 @@ Users are able to browse the different categories, as well as a special World Cu
 ![Login Page](./client/src/assets/img/Login-Page.png)
 ![Product Page](./client/src/assets/img/Product-Page.png)
 ![Logout Page](./client/src/assets/img/Logout-page.png)
+![Shopping Bag Page](./client/src/assets/img/Shopping-Bag-Page.png)
 ***
 
 <a name="links/source"></a>
@@ -47,6 +48,7 @@ Users are able to browse the different categories, as well as a special World Cu
 [Deployed-Application](https://daydreamathletic-app.herokuapp.com/)
 
 [Repo-Link](https://github.com/Collzbaba/DayDreamAthletic-App)
+
 [ React Portfolio Page](https://collzbaba.github.io/react-portfolio-app/)
 ***
 
