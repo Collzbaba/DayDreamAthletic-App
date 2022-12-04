@@ -34,6 +34,8 @@ export const NavBar = () => {
   // });
   console.log(auth.loggedIn());
 
+  const handleSearch = (e) => console.log(e.target);
+
 
 
   return (
@@ -62,25 +64,25 @@ export const NavBar = () => {
             </Nav>
             {/* <div className="form-social-container"> */}
             <div className="nav-filter-link">
-              <a className="gender-bold">MEN</a>
-              <a className="gender-bold">WOMEN</a>
-              <a className="gender-bold">SHOES</a>
-              <a>ACCESSORIES</a>
-              <a>SALE</a>
+              <a href='/' className="gender-bold">MEN</a>
+              <a href='/' className="gender-bold">WOMEN</a>
+              <a href='/' className="gender-bold">SHOES</a>
+              <a href='/' className="gender-bold">ACCESSORIES</a>
+              <a href='/' className="gender-bold">SALE</a>
             </div>
             <div className="search-form-container">
-              <Form className="d-flex ">
+              <Form onSubmit={handleSearch} className="d-flex ">
                 <Form.Control
                   type="search"
                   placeholder="Search"
                   className="me-2 search-form"
                   aria-label="Search"
                 />
-                <div className="search-icon-container">
+                {/* <div className="search-icon-container">
                   <img src={Search} className="search-icon"></img>
-                </div>
+                </div> */}
 
-                <Button variant="outline-success" className="search-btn">Search</Button>
+                <Button type="submit" variant="outline-success" className="search-btn">Search</Button>
               </Form>
             </div>
 

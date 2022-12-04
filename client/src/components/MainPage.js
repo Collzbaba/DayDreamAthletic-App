@@ -46,7 +46,7 @@ export const MainPage = () => {
             </div>
             <div className="banner-btn-container">
               <a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022" target="_blank" className="banner-btn banner-login-btn">STAY UPDATED !<img src={Arrow} className="arrow"></img></a>
-              <a className="banner-btn banner-shop-btn">SHOP NOW<img src={Arrow} className="arrow"></img></a>
+              <a href='/' className="banner-btn banner-shop-btn">SHOP NOW<img src={Arrow} className="arrow"></img></a>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
