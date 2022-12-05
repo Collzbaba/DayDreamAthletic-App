@@ -49,6 +49,8 @@ Users are able to browse the different categories, as well as a special World Cu
 
 [Repo-Link](https://github.com/Collzbaba/DayDreamAthletic-App)
 
+[Group 6 Repo-link](https://github.com/HunterBrennan1/DayDreamAthletic)
+
 [ React Portfolio Page](https://collzbaba.github.io/react-portfolio-app/)
 ***
 
